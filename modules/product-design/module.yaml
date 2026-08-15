@@ -1,0 +1,18 @@
+name: Product Design
+subname: product-design
+description: Convert research and goals into a product brief, flow, interaction model, and prototype direction.
+inputs:
+  research: {type: text, required: true}
+  product_goal: {type: text, required: true}
+  constraints: {type: text, required: false}
+use_case: Move a researched idea toward a buildable product concept.
+default:
+  focus: user_outcome
+  prototype: true
+result:
+  type: design_brief
+  description: Product brief, user flow, key interactions, and prototype target.
+revolt: Design brief, flows, interaction ideas, and prototype direction.
+version: 1.0.0
+type: product-design
+status: active
