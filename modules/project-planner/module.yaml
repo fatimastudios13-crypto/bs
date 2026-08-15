@@ -1,0 +1,18 @@
+name: Project Planner
+subname: project-planner
+description: Convert a validated specification into ordered milestones and implementation tasks.
+inputs:
+  specification: {type: text, required: true}
+  constraints: {type: text, required: false}
+use_case: Plan implementation without losing dependencies or validation checkpoints.
+default:
+  structure: milestones_then_tasks
+  include_dependencies: true
+  include_definition_of_done: true
+result:
+  type: implementation_plan
+  description: Milestones, tasks, dependencies, risks, and definition of done.
+revolt: Implementation plan broken into milestones and tasks.
+version: 1.0.0
+type: core
+status: active
