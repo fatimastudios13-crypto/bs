@@ -1,0 +1,18 @@
+name: Idea Research
+subname: idea-research
+description: Produce source-grounded research that separates evidence from assumptions.
+inputs:
+  concept: {type: text, required: true}
+  audience: {type: text, required: false}
+  constraints: {type: text, required: false}
+use_case: Validate an idea and identify user pain, alternatives, opportunities, and risks.
+default:
+  evidence_standard: primary_or_high_quality
+  output: evidence_and_actionable_implications
+result:
+  type: research_brief
+  description: Evidence, pain points, opportunities, risks, and next questions.
+revolt: Research brief with evidence and actionable implications.
+version: 1.0.0
+type: ai
+status: active
