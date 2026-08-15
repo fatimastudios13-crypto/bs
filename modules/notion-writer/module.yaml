@@ -1,0 +1,18 @@
+name: Notion Writer
+subname: notion-writer
+description: Persist important results in the correct Notion data source without unnecessary duplication.
+inputs:
+  content: {type: text, required: true}
+  target_data_source: {type: string, required: true}
+  properties: {type: object, required: false}
+use_case: Store ideas, research, decisions, specifications, and release records.
+default:
+  duplicate_policy: update_existing_when_match_is_confident
+  preserve_sources: true
+result:
+  type: notion_page
+  description: Created or updated structured Notion record.
+revolt: Structured Notion page/database record updated from the current result.
+version: 1.0.0
+type: notion
+status: active
