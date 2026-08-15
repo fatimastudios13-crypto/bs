@@ -1,0 +1,26 @@
+version: "1"
+module:
+  required:
+    - name
+    - subname
+    - description
+    - inputs
+    - use_case
+    - default
+    - result
+    - revolt
+    - version
+    - type
+    - status
+  properties:
+    name: { type: string }
+    subname: { type: string }
+    description: { type: string }
+    inputs: { type: object }
+    use_case: { type: string }
+    default: { type: object }
+    result: { type: object }
+    revolt: { type: string }
+    version: { type: string }
+    type: { type: string }
+    status: { type: string }
